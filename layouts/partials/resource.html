@@ -15,9 +15,9 @@
     {{ $resource = $resource | resources.Fingerprint "sha256" }}
 
     {{ if eq .type "css" }}
-        <link rel="stylesheet" href="{{ $resource.Permalink }}" integrity="{{ $resource.Data.Integrity }}" defer >
+        <link rel="stylesheet" href="{{ $resource.Permalink }}" integrity="{{ $resource.Data.Integrity }}" defer crossorigin="anonymous">
     {{ else if eq .type "js" }}
-        <script src="{{ $resource.Permalink }}" type="text/javascript" charset="utf-8" integrity="{{ $resource.Data.Integrity }}"></script>
+        <script src="{{ $resource.Permalink }}" type="text/javascript" charset="utf-8" integrity="{{ $resource.Data.Integrity }}" crossorigin="anonymous"></script>
     {{ end }}
 <!-- For backward compatibility -->
 {{ else }}
