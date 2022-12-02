@@ -2,6 +2,8 @@
 title: "31st week in review"
 date: 2022-08-07T22:12:00+02:00
 draft: false
+categories:
+  - Week in review
 ---
 
 Longer break, than initially anticipated and planned. Actually spent either on vacation or quite busy building... a treehouse for my kids. At some point I (probably) will share some photos and details about it.

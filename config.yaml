@@ -20,6 +20,9 @@ menu:
     url: /about/
     weight: 0
 
+taxonomies:
+  category: categories
+
 params:
   author: "Maciej Litwiniuk"
   email: maciej@litwiniuk.net # used for microformats

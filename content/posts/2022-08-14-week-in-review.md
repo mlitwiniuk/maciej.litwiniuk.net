@@ -2,6 +2,8 @@
 title: "32nd week in review"
 date: 2022-08-14T21:16:00+02:00
 draft: false
+categories:
+  - Week in review
 ---
 
 It turns out, that I'll will do hell lot of writing in weeks to come. So this is, what I'm focusing on now

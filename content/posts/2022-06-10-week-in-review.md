@@ -2,6 +2,8 @@
 title: "23rd week in review"
 date: 2022-06-10T08:14:12+02:00
 draft: false
+categories:
+  - Week in review
 ---
 
 So this is the humble start. I plan to write more + get some photos in here, but let's take baby steps. Idea to start blogging and start with links got highly inspired by great weekly review [Christof Damian](https://christof.damian.net/) is doing (with whom I have a pleasure to work with).
