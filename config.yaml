@@ -61,6 +61,8 @@ params:
     name: mlitwiniuk
   - id: instagram
     name: maciejlitwiniuk
+  - id: mastodon
+    name: mlitwiniuk@ruby.social
 #  - id: hugo
 #    url: "https://gohugo.io/"
 #    icon: "hugo"
