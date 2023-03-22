@@ -13,15 +13,15 @@ Recently I had to use multiple repositories on one server with different deploy 
 ```bash
 deploy@localhost:~$ cat .gitconfig
 [includeIf "gitdir:~/investment/"]
-        path = .gitconfig-ip
+    path = .gitconfig-ip
 ```
 
 ```bash
 deploy@localhost:~$ cat .gitconfig-ip
 [core]
-        sshCommand = ssh -i ~/.ssh/id_rsa_ip -F /dev/null
+    sshCommand = ssh -i ~/.ssh/id_rsa_ip -F /dev/null -o IdentitiesOnly=yes
 ```
 
-In sshCommand `-F /dev/null` causes `~/.ssh/config` to be ignored.
+In sshCommand `-F /dev/null` causes `~/.ssh/config` to be ignored. `-o IdentitiesOnly=yes` instructs ssh-agent not to use default behaviour and offer any key available, but instead only the one provided via command line.
 
 Another use case is to have different ssh keys for personal and proffessional stuff
