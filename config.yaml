@@ -9,16 +9,16 @@ enableRobotsTXT: true
 
 menu:
   main:
-  - identifier: archive
-    name: Archive
-    title: Archive
-    url: /posts/
-    weight: 0
-  - identifier: about
-    name: About
-    title: About
-    url: /about/
-    weight: 0
+    - identifier: archive
+      name: Archive
+      title: Archive
+      url: /posts/
+      weight: 0
+    - identifier: about
+      name: About
+      title: About
+      url: /about/
+      weight: 0
 
 taxonomies:
   category: categories
@@ -38,13 +38,13 @@ params:
   dateFormat: "2006-01-02"
   paginationSinglePost: true
   style: light-without-switcher
-  readMore: false # show read more button
-  readNextPosts: 5  # show 5 related posts, 0 by default
+  readMore: true # show read more button
+  readNextPosts: 5 # show 5 related posts, 0 by default
   disableSummary: false
   copyCodeButton: true # true by default
   rssAsSocialIcon: true
   # utteranc.es support
-  utterancesRepo: "mlitwiniuk/maciej.litwiniuk.net"  # mandatory
+  utterancesRepo: "mlitwiniuk/maciej.litwiniuk.net" # mandatory
   utterancesTheme: "" # optional
   utterancesIssue: "" # optional
   utterancesLabel: "" # optional
@@ -55,14 +55,14 @@ params:
     login: maciej.litwiniuk.net
     pingback: true
   social:
-  - id: github
-    name: mlitwiniuk
-  - id: twitter
-    name: mlitwiniuk
-  - id: instagram
-    name: maciejlitwiniuk
-  - id: mastodon
-    name: mlitwiniuk@ruby.social
+    - id: github
+      name: mlitwiniuk
+    - id: twitter
+      name: mlitwiniuk
+    - id: instagram
+      name: maciejlitwiniuk
+    - id: mastodon
+      name: mlitwiniuk@ruby.social
 #  - id: hugo
 #    url: "https://gohugo.io/"
 #    icon: "hugo"
