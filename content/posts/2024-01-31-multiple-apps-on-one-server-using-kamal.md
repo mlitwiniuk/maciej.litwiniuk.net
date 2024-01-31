@@ -112,7 +112,7 @@ There are few non-standard configuration options in here:
    EOF
 
 
-Config for the second app (it's staging version on [humadroid.io](https://humadroid.io) is very similar:
+Config of the second app (it's staging version of [humadroid.io](https://humadroid.io) ) is very similar:
 
 
 ```yaml
@@ -181,7 +181,7 @@ healthcheck:
   max_attempts: 10
 ```
 
-Note lack of traefik config here - traefik will know what to do based on label set for web server. All servers and accessories are added to different docker network, accessory servers expose different ports. We need to add one missing element though - connect traefik to new network  (here: humadroid). This is done in post-deploy hook, which looks analogical to pre-deploy - put it in `.kamal/hooks/post-deploy` and don't forget to make it executable.
+Note lack of traefik config here - traefik will know what to do based on label set for the web server. All servers and accessories are added to new, different docker network, accessory servers expose different ports. It's basically that. All we need to do is to add one missing element - connect traefik to the new network  (here: humadroid). This is done in post-deploy hook, which looks analogical to pre-deploy - put it in `.kamal/hooks/post-deploy` and don't forget to make it executable.
 
 ```bash
 #!/usr/bin/env bash
@@ -201,3 +201,5 @@ ssh $REMOTE_HOST << EOF
     fi
 EOF
 ```
+
+And voila, both apps should be working from the same machine, all contenerized and deplyed thanks to kamal.
