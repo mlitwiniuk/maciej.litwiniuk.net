@@ -27,7 +27,7 @@ Idea is simple - anyone accessing address like `some_name.yourdomain.dev` will a
 	*.yourdomain.dev   A   112.123.132.122
 ```
 
-4. Log in to the VPS and download this package: [GitHub - hons82/go-http-tunnel: Fast and secure tunnels over HTTP/2](https://github.com/hons82/go-http-tunnel) - it's easiest to get it's precompiled binary from [releases](https://github.com/hons82/go-http-tunnel/releases) page
+4. Log in to the VPS and download this package: [GitHub - hons82/go-http-tunnel: Fast and secure tunnels over HTTP/2](https://github.com/hons82/go-http-tunnel "{rel='nofollow' target='_blank'}") - it's easiest to get it's precompiled binary from [releases](https://github.com/hons82/go-http-tunnel/releases "{rel='nofollow' target='_blank'}") page
 5. Skip generation of server's certificate, use letsencrypt for that (I'm hosting my domains on route53 and following steps assume you're as well, if not, first steps will be completelly different)
    1. Get domain's zone from route53
    2. Create new IAM profile with folliowing policy

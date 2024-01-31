@@ -6,9 +6,9 @@ categories:
   - TIL
 ---
 
-Disclaimer - I found this solution thanks to my friend [Piotr](https://github.com/bonias) who needed it for different use case, described below.
+Disclaimer - I found this solution thanks to my friend [Piotr](https://github.com/bonias "{rel='nofollow' target='_blank'}") who needed it for different use case, described below.
 
-Recently I had to use multiple repositories on one server with different deploy keys. Solution [suggested by github docs](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server) was not viable, because I could not alter hostname easilly, as it suggest. It turns out, that actually you can use different keys on per directory basis, when using git. It's doable thanks to [git conditional includes](https://git-scm.com/docs/git-config#_includes):
+Recently I had to use multiple repositories on one server with different deploy keys. Solution [suggested by github docs](https://docs.github.com/en/developers/overview/managing-deploy-keys#using-multiple-repositories-on-one-server "{rel='nofollow' target='_blank'}") was not viable, because I could not alter hostname easilly, as it suggest. It turns out, that actually you can use different keys on per directory basis, when using git. It's doable thanks to [git conditional includes](https://git-scm.com/docs/git-config#_includes "{rel='nofollow' target='_blank'}"):
 
 ```bash
 deploy@localhost:~$ cat .gitconfig

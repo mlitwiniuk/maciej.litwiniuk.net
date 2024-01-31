@@ -1,1 +1,10 @@
-<a href="{{ .Destination | safeURL }}"{{ with .Title}} title="{{ . }}"{{ end }}{{ if strings.HasPrefix .Destination "http" }} target="_blank"{{ end }}>{{ .Text }}</a>
+{{- $parsedTitle := dict -}}
+{{- with .Title -}}
+{{- $parsedTitle = partial "functions/parse-title-attribute.html" . -}}
+{{- end -}}
+
+<a href="{{ .Destination | safeURL }}" {{- with $parsedTitle.title }} title="{{ . }}" {{- end -}} {{- with
+  $parsedTitle.attributes -}} {{- range $k, $v :=. -}} {{- printf " %s=%q" $k $v | safeHTMLAttr -}} {{- end -}} {{- end
+  -}}>{{ .Text | safeHTML }}</a>
+
+{{- /* Strip trailing space. */ -}}

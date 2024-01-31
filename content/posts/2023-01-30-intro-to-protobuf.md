@@ -8,7 +8,7 @@ categories:
 
 Protobuf or more precisely Protocol Buffers is a data serialization format developer by Google and it is designed to be language-agnostic. What's important (and what makes it a better choice than ie. JSON) is that it automatically provides validation of data, preserves order in arrays and provides pre-generated classes that do all the hard work with set of setters and getters. Magic is done by compiling `.proto` files with schema into language files.
 
-When I was trying to learn more about it (to actually learn what it is and why I'd like to use it), I've noticed that in [examples directory](https://github.com/protocolbuffers/protobuf/tree/main/examples) of protobuf project on Github the ruby example is missing, even thoughruby support is build-in into `protoc` compiler. So I've decided to fix that and a ruby example now can be found in [my fork](https://github.com/mlitwiniuk/protobuf/tree/ruby_example/examples)
+When I was trying to learn more about it (to actually learn what it is and why I'd like to use it), I've noticed that in [examples directory](https://github.com/protocolbuffers/protobuf/tree/main/examples "{rel='nofollow' target='_blank'}") of protobuf project on Github the ruby example is missing, even thoughruby support is build-in into `protoc` compiler. So I've decided to fix that and a ruby example now can be found in [my fork](https://github.com/mlitwiniuk/protobuf/tree/ruby_example/examples "{rel='nofollow' target='_blank'}")
 
 Lessons learned here:
 
@@ -45,4 +45,4 @@ $ protoc --ruby_out=. addressbook.proto
 # will result in new addressbook_pb.rb file
 ```
 
-I still need to check out [Avro](https://avro.apache.org), but protobuf seems to be perfect data exchange format between services / applications in different languages and developed by different teams.
+I still need to check out [Avro](https://avro.apache.org "{rel='nofollow' target='_blank'}"), but protobuf seems to be perfect data exchange format between services / applications in different languages and developed by different teams.
