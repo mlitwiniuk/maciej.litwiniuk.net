@@ -6,9 +6,9 @@ categories:
   - Learning
 ---
 
-Kamal is great, there are no doubts about it. And when combined with power-efficient bare-metal servers on ie. hetzner.com, it's even more interesting - it's actually possible to have to full, multiple Rails (or any other) apps deployed through kamal on the same machine. Of course - together with additional "accessories" - like postgresql or redis.
+Kamal's effectiveness is undeniable. Its integration with power-efficient bare-metal servers, such as those available on Hetzner.com, elevates its appeal, allowing for the simultaneous deployment of multiple Rails applications (or applications developed with other frameworks) on a single server. This setup can be further enhanced with the inclusion of additional components like PostgreSQL or Redis.
 
-First of all we need to remember, that as each service is always namespaced, traefik is not - so there can be only one traefic service in our setup. In my case I've decided, that prograils service responsible for running [prograils.com](https://prograils.com) website it's going to act as primary one. Here's it's full config:
+It's important to note that while each service in this configuration operates within its own namespace, Traefik does not share this characteristic; only one Traefik service can be included in our setup. In my scenario, I've designated the Prograils service, which powers the [prograils.com](https://prograils.com) website, as the primary service. Below is the complete configuration for this setup:
 
 ```yaml
 service: prograils
@@ -181,7 +181,7 @@ healthcheck:
   max_attempts: 10
 ```
 
-Note lack of traefik config here - traefik will know what to do based on label set for the web server. All servers and accessories are added to new, different docker network, accessory servers expose different ports. It's basically that. All we need to do is to add one missing element - connect traefik to the new network  (here: humadroid). This is done in post-deploy hook, which looks analogical to pre-deploy - put it in `.kamal/hooks/post-deploy` and don't forget to make it executable.
+Note that there is no explicit Traefik configuration mentioned here. Traefik automatically identifies how to do routing through the labels assigned to the web server. All servers and supplementary services are incorporated into a newly created, separate Docker network, with accessory services configured to expose distinct ports. Essentially, that's all there is to it. The only remaining step is to link Traefik to this new network (named "humadroid" in this case). This connection is established through a post-deploy hook, which is similar in nature to a pre-deploy hook. This hook should be placed in .kamal/hooks/post-deploy and must be made executable.
 
 ```bash
 #!/usr/bin/env bash
