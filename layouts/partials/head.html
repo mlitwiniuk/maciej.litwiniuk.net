@@ -71,8 +71,8 @@
 {{ if and (.Site.GoogleAnalytics) (hugo.IsProduction) }}
     {{ template "_internal/google_analytics.html" . }}
 {{ end }}
-{{ if and (.Site.Params.plausibleAnalytics) (hugo.IsProduction) }}
-    <script defer data-domain="{{.Site.Params.plausibleAnalytics.domain}}" src="https://plausible.io/js/plausible.js"></script>
+{{ if and (.Site.Params.umami) (hugo.IsProduction) }}
+    <script async src="https://eu.umami.is/script.js" data-website-id="{{.Site.Params.umami.code}}"></script>
 {{ end }}
 
 {{ partial "head-extra.html" . }}

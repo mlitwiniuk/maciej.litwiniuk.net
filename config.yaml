@@ -49,8 +49,8 @@ params:
   utterancesIssue: "" # optional
   utterancesLabel: "" # optional
   graphcommentId: ""
-  plausibleAnalytics:
-    domain: maciej.litwiniuk.net
+  umami:
+    code: bc2f0812-b2f5-4258-ba0f-4004fa128f76
   webmentions:
     login: maciej.litwiniuk.net
     pingback: true
