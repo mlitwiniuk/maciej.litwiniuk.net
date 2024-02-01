@@ -7,7 +7,6 @@ categories:
   - Product development
   - Brainstorming
 ---
-###  and User Management
 
 Navigating the journey of a solo technical founder comes with its unique set of challenges. From coding to deploying applications, the technical aspects often come naturally. However, the multifaceted roles involving accounting, marketing, design, and notably, product development, present a broader spectrum of challenges. While resources abound for tackling marketing and accounting, discussions around product development are notably scarcer. For small teams or products, the key often lies in the articulation of problems through brainstorming and discussion, a task that typically requires a collaborative effort. Unfortunately, without a product-oriented co-founder, finding alternative avenues to explore and refine ideas becomes crucial. It is in this context that I see blogging as a valuable tool for deliberation.
 
