@@ -19,6 +19,11 @@ menu:
       title: About
       url: /about/
       weight: 0
+    - identifier: projects
+      name: Projects
+      title: projects
+      url: /projects/
+      weight: 0
 
 taxonomies:
   category: categories
