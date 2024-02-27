@@ -1,7 +1,6 @@
 ---
 title: "About Me"
 date: "2022-06-05"
-kind: "list"
 ---
 
 Hey there, I'm Maciej – a bit of a tech geek, serial startup enthusiast, and a software wizard (well, sort of). I kick-started a [software house](https://prograils.com) from scratch and rode that rollercoaster with all its ups, downs, and loop-the-loops. I've also dabbled in the startup realm a couple of times, hitting the 'Launch' button and learning the hard way that it's not all just unicorns and rainbows.

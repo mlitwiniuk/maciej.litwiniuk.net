@@ -1,7 +1,6 @@
 ---
 title: "Projects"
 date: 2024-02-05
-kind: "list"
 ---
 
 ## ideabug <sub><sup>unreleased</sup></sub>
